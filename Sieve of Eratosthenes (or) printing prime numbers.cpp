@@ -9,7 +9,7 @@ int main()
     {
         if(prime[i]==0)
         {
-            for(int j=i*i; j<=n; j+=i)
+            for(int j=2*i; j<=n; j+=i)
             prime[j]=1;
         }
     }
