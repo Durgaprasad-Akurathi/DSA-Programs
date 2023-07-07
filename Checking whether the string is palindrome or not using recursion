@@ -1,0 +1,21 @@
+//write a program to find whether a string is palindrome
+
+#include<bits/stdc++.h>
+using namespace std;
+bool palin(string s, int i, int j)
+{
+    if (i>=j) 
+        return true;
+    if (s[i]!=s[j]) 
+        return false;
+    return palin(s, i+1, j-1);
+}
+int main()
+{
+    string s;
+    cin>>s;
+    int i=0, j=s.length()-1;
+    if(palin(s, i, j))
+    cout<<"plaindrome";
+    else cout<<"not palindrome";
+}
