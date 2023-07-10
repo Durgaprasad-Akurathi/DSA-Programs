@@ -17,7 +17,7 @@ int main()
 {
     string S1 = "axyt";
     string S2 = "ayzx";
-    int i=S1.length(), j=S2.length();
+    int i=S1.length()-1, j=S2.length()-1;
     int res = countOccurrences(S1, S2, i, j);
     cout<<res;
 }
